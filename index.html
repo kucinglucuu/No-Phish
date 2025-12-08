@@ -9,9 +9,9 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">No<span>Phish</span></div>
+        <div class="logo"><a href="index.html">No<span>Phish</span></a></div>
         <ul class="nav-links">
-            <li><a href="#">HomePage</a></li>
+            <li><a href="index.html">HomePage</a></li>
             <li><a href="artikel.html">Artikel</a></li>
             <li><a href="quiz.html">Quiz</a></li>
         </ul>
@@ -58,9 +58,14 @@
             <p>A targeted attack on a specific individual or organization with more detailed information.</p>
         </div>
     </section>
+
+    <!-- REPORT PHISHING SECTION -->
     <section class="report-section">
-        <h2>Report Phishing</h2>
-        <button class="report-btn" onclick="reportPhishing()">Report!</button>
+        <div class="report-content">
+            <h2>Report Phishing Activity</h2>
+            <p>Help us combat cyber threats by reporting suspicious email and websites</p>
+            <button class="report-btn" onclick="window.location.href='report.html'">Report!</button>
+        </div>
     </section>
 
     <script src="script.js"></script>
