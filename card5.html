@@ -22,16 +22,16 @@
         <div class="profile-badge">R</div>
     </header>
 
-    <!-- HERO GAMBAR -->
+    
     <section class="hero-article">
         <div class="hero-article-text">
-            <h1>Recognize Phishing Emails:<br>Fake Emails That Look Very Convincing</h1>
+            <h1>Fake Giveaways & Promos:<br>“Congratulations! You Won a Prize…” as Bait</h1>
         </div>
 
-        <img src="email.jpg" alt="Phishing Illustration">
+        <img src="promo.jpg" alt="Phishing Illustration">
     </section>
 
-    <!-- ARTIKEL DETAIL -->
+    
     <section class="article-container">
 
         <h2>Educational Goals</h2>
@@ -84,4 +84,50 @@
     </section>
 
 </body>
+<section class="quiz-area">
+    <div class="quiz-layout">
+
+        
+        <div class="quiz-left">
+            <h2>Which of the following best describes the characteristics of a phishing email?</h2>
+
+            <div class="options-grid">
+                <div class="option" onclick="checkAnswer(this, false)">A. It is always full of spelling mistakes and never uses professional design.</div>
+                <div class="option" onclick="checkAnswer(this, true)">B. It often uses official-looking logos, similar domains, and urgent messages to make the victim panic.</div>
+                <div class="option" onclick="checkAnswer(this, false)">C. It only contains shopping promotions and never asks the user to take action.</div>
+                <div class="option" onclick="checkAnswer(this, false)">D. It is always sent from an official domain such as @bankbri.co.id.</div>
+            </div>
+        </div>
+
+        
+        <div class="quiz-image">
+            <img src="hiasan.png" alt="Quiz Decoration">
+        </div>
+
+        
+        <img class="quiz-illustration" src="ai.png" alt="illustration">
+
+    </div>
+</section>
+
+
+<script>
+function checkAnswer(element, isCorrect) {
+
+    const all = document.querySelectorAll(".option");
+
+    // Reset warna
+    all.forEach(opt => opt.classList.remove("correct", "wrong", "disabled"));
+
+    if (isCorrect) {
+        element.classList.add("correct");
+    } else {
+        element.classList.add("wrong");
+    }
+
+    all.forEach(opt => opt.classList.add("disabled"));
+}
+</script>
+
+
 </html>
